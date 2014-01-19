@@ -47,29 +47,14 @@ static SKLabelNode *myLabel;
         sprite.xScale = scale;
         sprite.yScale = scale;
 
-        
         SKAction *seedFlight = [SKAction followPath:flightPath asOffset:YES orientToPath:NO duration:9.5];
         SKAction *playMusic = [SKAction playSoundFileNamed:@"flight.caf" waitForCompletion:NO];
         [sprite runAction:[SKAction sequence:@[playMusic, seedFlight]]];
 
         [self addChild:sprite];
         
-        /*
-         //This code is to read the seed outline path from a file...
-         if (self) {
-            NSString *fileText = [NSString stringWithContentsOfFile:[[NSBundle mainBundle]
-              //pathForResource:@"DandelionSeedPathV2"
-                pathForResource:@"Shape"
-                ofType:@"txt"]
-                encoding:NSUTF8StringEncoding error:nil];
-            seedShape = [ShapeUtilities createCGPathRefFromEPSString:fileText];
-
-            scale = 1.0;
-        }
-        */
-        
-        //code added for the accelerometer calcs
-        //set up the filter constants
+        // code added for the accelerometer calcs
+        // set up the filter constants
         dt = kUpdateInterval;
         RC = 1.0/kCutoffFrequency;
         filterConstant = dt/(dt +RC);
@@ -81,14 +66,12 @@ static SKLabelNode *myLabel;
         
         //set up the default gravity (down to the bottom of the scene)
         self.physicsWorld.gravity = CGVectorMake(0.0, -1.225);
-        
     }
     return self;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    
     for (UITouch *touch in touches) {
         if (myLabel != NULL) {
             SKAction *fade = [SKAction fadeOutWithDuration:1.0];
@@ -111,14 +94,8 @@ static SKLabelNode *myLabel;
         sprite.physicsBody.linearDamping = 0.98;
         sprite.physicsBody.restitution = 0.05;
         
-        // make gravity a little less - now done in initWithSize
-        //self.physicsWorld.gravity = CGPointMake(0.0, -1.225);
-        
         // bound the scene's physicsBody
         self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
-        
-        //SKAction *action = [SKAction followPath:flightPath duration:4.5];
-        //[sprite runAction:[SKAction repeatActionForever:action]];
         
         [self addChild:sprite];
     }

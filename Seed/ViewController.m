@@ -18,10 +18,12 @@
     
     // Configure the view.
     SKView * skView = (SKView *)self.view;
+//    uncomment these two lines to see the 'Frames Per Second' rate and 'Number of Sprites' displayed on screen
 //    skView.showsFPS = YES;
 //    skView.showsNodeCount = YES;
     
     // Create and configure the scene.
+//    the original code that set the view bounds to the visible view size
 //    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
     // make an extra wide scene so that the seeds can fall out of the view
     CGSize wideScene = skView.bounds.size;
@@ -45,7 +47,7 @@
      ^(CMAccelerometerData *accelerometerData, NSError *error) {
          [(MyScene *)scene setAcceleration:accelerometerData.acceleration];
          [scene performSelectorOnMainThread:@selector(updateGravityLocation) withObject:nil waitUntilDone:NO];
-// Some alternate code suggested by Andrew Stone to replace the 'performSelectorOnMainThread' above:
+//  Alternate code suggested by Andrew Stone to replace the 'performSelectorOnMainThread' above:
 //         dispatch_async(dispatch_get_main_queue(), ^{
 //             [scene updateGravityLocation];
 //         });

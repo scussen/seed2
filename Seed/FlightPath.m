@@ -17,7 +17,6 @@
     [bezierPath moveToPoint:CGPointMake(0, 240)];
     [bezierPath addCurveToPoint:CGPointMake(360, 160) controlPoint1:CGPointMake(220,260) controlPoint2:CGPointMake(200, 160)];
 
-    
     return bezierPath.CGPath;
 }
 

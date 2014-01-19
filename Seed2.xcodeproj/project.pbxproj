@@ -26,9 +26,6 @@
 		42A84889178F534F00F77F78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A84887178F534F00F77F78 /* InfoPlist.strings */; };
 		42A8488B178F534F00F77F78 /* SeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A8488A178F534F00F77F78 /* SeedTests.m */; };
 		42A84895178F53D000F77F78 /* Seed.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A84894178F53D000F77F78 /* Seed.png */; };
-		42A84898178FBBD100F77F78 /* DandelionSeedPathV2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42A84897178FBBD100F77F78 /* DandelionSeedPathV2.txt */; };
-		42A8489B178FBC6600F77F78 /* ShapeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A8489A178FBC6600F77F78 /* ShapeUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		42A8489D178FC1FE00F77F78 /* Shape.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42A8489C178FC1FE00F77F78 /* Shape.txt */; };
 		42A848A01790695600F77F78 /* SeedShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A8489F1790695600F77F78 /* SeedShape.m */; };
 		42A848A31791F4EA00F77F78 /* FlightPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A848A21791F4EA00F77F78 /* FlightPath.m */; };
 /* End PBXBuildFile section */
@@ -69,10 +66,6 @@
 		42A84888178F534F00F77F78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42A8488A178F534F00F77F78 /* SeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeedTests.m; sourceTree = "<group>"; };
 		42A84894178F53D000F77F78 /* Seed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Seed.png; sourceTree = "<group>"; };
-		42A84897178FBBD100F77F78 /* DandelionSeedPathV2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DandelionSeedPathV2.txt; path = ../DandelionSeedPathV2.txt; sourceTree = "<group>"; };
-		42A84899178FBC6600F77F78 /* ShapeUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeUtilities.h; sourceTree = "<group>"; };
-		42A8489A178FBC6600F77F78 /* ShapeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeUtilities.m; sourceTree = "<group>"; };
-		42A8489C178FC1FE00F77F78 /* Shape.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shape.txt; sourceTree = "<group>"; };
 		42A8489E1790695600F77F78 /* SeedShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeedShape.h; sourceTree = "<group>"; };
 		42A8489F1790695600F77F78 /* SeedShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeedShape.m; sourceTree = "<group>"; };
 		42A848A11791F4EA00F77F78 /* FlightPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightPath.h; sourceTree = "<group>"; };
@@ -148,14 +141,12 @@
 				42A84894178F53D000F77F78 /* Seed.png */,
 				4259F92217E1509400E575CB /* flight.mp3 */,
 				4259F92417E1588B00E575CB /* flight.caf */,
-				42A84877178F534F00F77F78 /* Images.xcassets */,
-				42A84899178FBC6600F77F78 /* ShapeUtilities.h */,
-				42A8489A178FBC6600F77F78 /* ShapeUtilities.m */,
-				42A84861178F534F00F77F78 /* Supporting Files */,
 				42A8489E1790695600F77F78 /* SeedShape.h */,
 				42A8489F1790695600F77F78 /* SeedShape.m */,
 				42A848A11791F4EA00F77F78 /* FlightPath.h */,
 				42A848A21791F4EA00F77F78 /* FlightPath.m */,
+				42A84877178F534F00F77F78 /* Images.xcassets */,
+				42A84861178F534F00F77F78 /* Supporting Files */,
 			);
 			name = Seed2;
 			path = Seed;
@@ -164,8 +155,6 @@
 		42A84861178F534F00F77F78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				42A84897178FBBD100F77F78 /* DandelionSeedPathV2.txt */,
-				42A8489C178FC1FE00F77F78 /* Shape.txt */,
 				42A84862178F534F00F77F78 /* Seed2-Info.plist */,
 				42A84863178F534F00F77F78 /* InfoPlist.strings */,
 				42A84866178F534F00F77F78 /* main.m */,
@@ -271,12 +260,10 @@
 			files = (
 				4259F92517E15AA900E575CB /* flight.caf in Resources */,
 				42A84895178F53D000F77F78 /* Seed.png in Resources */,
-				42A8489D178FC1FE00F77F78 /* Shape.txt in Resources */,
 				42A84865178F534F00F77F78 /* InfoPlist.strings in Resources */,
 				42A84878178F534F00F77F78 /* Images.xcassets in Resources */,
 				4259F92317E1509400E575CB /* flight.mp3 in Resources */,
 				42A8486E178F534F00F77F78 /* Main.storyboard in Resources */,
-				42A84898178FBBD100F77F78 /* DandelionSeedPathV2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +284,6 @@
 			files = (
 				42A848A01790695600F77F78 /* SeedShape.m in Sources */,
 				42A84874178F534F00F77F78 /* MyScene.m in Sources */,
-				42A8489B178FBC6600F77F78 /* ShapeUtilities.m in Sources */,
 				42A84871178F534F00F77F78 /* ViewController.m in Sources */,
 				42A8486B178F534F00F77F78 /* AppDelegate.m in Sources */,
 				42A848A31791F4EA00F77F78 /* FlightPath.m in Sources */,

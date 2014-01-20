@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4259F92317E1509400E575CB /* flight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4259F92217E1509400E575CB /* flight.mp3 */; };
 		4259F92517E15AA900E575CB /* flight.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4259F92417E1588B00E575CB /* flight.caf */; };
+		4275E1AB188CB5B00068FEE8 /* SeedCompositeOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 4275E1AA188CB5B00068FEE8 /* SeedCompositeOverlay.png */; };
 		42A84859178F534F00F77F78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A84858178F534F00F77F78 /* Foundation.framework */; };
 		42A8485B178F534F00F77F78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A8485A178F534F00F77F78 /* CoreGraphics.framework */; };
 		42A8485D178F534F00F77F78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A8485C178F534F00F77F78 /* UIKit.framework */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		4259F92217E1509400E575CB /* flight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flight.mp3; sourceTree = "<group>"; };
 		4259F92417E1588B00E575CB /* flight.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = flight.caf; sourceTree = "<group>"; };
+		4275E1AA188CB5B00068FEE8 /* SeedCompositeOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SeedCompositeOverlay.png; sourceTree = "<group>"; };
 		42A84855178F534F00F77F78 /* Seed2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seed2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A84858178F534F00F77F78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42A8485A178F534F00F77F78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,6 +133,7 @@
 		42A84860178F534F00F77F78 /* Seed2 */ = {
 			isa = PBXGroup;
 			children = (
+				4275E1AA188CB5B00068FEE8 /* SeedCompositeOverlay.png */,
 				42A84869178F534F00F77F78 /* AppDelegate.h */,
 				42A8486A178F534F00F77F78 /* AppDelegate.m */,
 				42A8486C178F534F00F77F78 /* Main.storyboard */,
@@ -261,6 +264,7 @@
 				4259F92517E15AA900E575CB /* flight.caf in Resources */,
 				42A84895178F53D000F77F78 /* Seed.png in Resources */,
 				42A84865178F534F00F77F78 /* InfoPlist.strings in Resources */,
+				4275E1AB188CB5B00068FEE8 /* SeedCompositeOverlay.png in Resources */,
 				42A84878178F534F00F77F78 /* Images.xcassets in Resources */,
 				4259F92317E1509400E575CB /* flight.mp3 in Resources */,
 				42A8486E178F534F00F77F78 /* Main.storyboard in Resources */,
